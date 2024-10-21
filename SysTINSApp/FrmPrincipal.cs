@@ -27,9 +27,11 @@ namespace SysTINSApp
             if (dr.Read())
             {
                 MessageBox.Show($"olá{dr.GetString(1)}");
-                else
+                //}
+               // else
                 {
-                 MessageBox.Show("Nível não encontrado!")
+                    MessageBox.Show("Nível não encontrado!");
+
                 }
 
 
