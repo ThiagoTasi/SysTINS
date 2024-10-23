@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SysTINSClass;
 
 namespace SysTINSApp
 {
@@ -16,5 +17,16 @@ namespace SysTINSApp
         {
             InitializeComponent();
         }
+
+        private void FrmUsuarios_Load(object sender, EventArgs e)
+        {
+            cmbNivel.DataSource = Nível.ObterLista();
+            cmbNivel.DisplayMember = "Nome";
+            cmbNivel.ValueMember = "Id";
+
+
+        }
     }
 }
+    
+
