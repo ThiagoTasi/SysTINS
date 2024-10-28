@@ -74,7 +74,7 @@
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "&Cadastros";
-            cadastrosToolStripMenuItem.Click += cadastrosToolStripMenuItem_Click;
+           
             // 
             // clientesToolStripMenuItem
             // 
@@ -82,7 +82,7 @@
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(180, 22);
             clientesToolStripMenuItem.Text = "&Clientes";
-            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
+           
             // 
             // novoToolStripMenuItem
             // 

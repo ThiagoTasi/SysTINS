@@ -61,6 +61,7 @@
             btnInserir.TabIndex = 0;
             btnInserir.Text = "Inserir";
             btnInserir.UseVisualStyleBackColor = true;
+            btnInserir.Click += btnInserir_Click;
             // 
             // btnConsultar
             // 
@@ -173,11 +174,13 @@
             // 
             // cmbNivel
             // 
+            cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbNivel.FormattingEnabled = true;
             cmbNivel.Location = new Point(324, 122);
             cmbNivel.Name = "cmbNivel";
             cmbNivel.Size = new Size(145, 23);
             cmbNivel.TabIndex = 8;
+            
             // 
             // label5
             // 
@@ -230,7 +233,6 @@
             txtSenha.Size = new Size(121, 23);
             txtSenha.TabIndex = 14;
             txtSenha.UseSystemPasswordChar = true;
-         
             // 
             // txtConfSenha
             // 

@@ -9,12 +9,12 @@ namespace SysTINSClass
 {
     public class Usuario
     {
-        public int Id;
-        public string? Nome;
-        public string? Email;
-        public string? Senha;
-        public Nível Nível;
-        public bool Ativo;
+        public int Id { get; set; }
+        public string? Nome { get; set; }
+        public string? Email { get; set; }
+        public string? Senha { get; set; }
+        public Nível Nível { get; set; }
+        public bool Ativo { get; set; }
 
         public Usuario()
         {
@@ -58,7 +58,7 @@ namespace SysTINSClass
 
 
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "sp-usuario_insert";
+            cmd.CommandText = "sp_usuario_insert";
             cmd.Parameters.Add("spnome", MySql.Data.MySqlClient.MySqlDbType.VarChar).Value = Nome;
             cmd.Parameters.AddWithValue("spemail", Email);
             cmd.Parameters.AddWithValue("spsenha", Senha);
@@ -90,7 +90,7 @@ namespace SysTINSClass
             }
             return usuario;
         }
-        public List<Usuario> ObterLista()
+        public static List<Usuario> ObterLista()
         {
             List<Usuario> lista = new();
             var cmd = Banco.Abrir();

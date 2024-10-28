@@ -19,6 +19,13 @@ namespace SysTINSApp
             InitializeComponent();
         }
 
+        private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frmUsuarios = new();
+            //frmUsuarios.MdiParent = this;
+            frmUsuarios.Show();
+
+        }
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             var cmd = Banco.Abrir();
@@ -28,31 +35,11 @@ namespace SysTINSApp
             {
                 MessageBox.Show($"olá{dr.GetString(1)}");
                 //}
-               // else
-                {
-                    MessageBox.Show("Nível não encontrado!");
-
-                }
-
-
+                // else
             }
-        }
+            MessageBox.Show("Nível não encontrado!");
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            FrmUsuarios frmUsuarios = new();
-            frmUsuarios.MdiParent = this;
-            frmUsuarios.Show();
         }
     }
 }
+
